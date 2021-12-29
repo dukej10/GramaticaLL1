@@ -1,0 +1,19 @@
+{
+  "gramaticas": [
+    {
+      "producciones": "AL ->  id := P\nP ->  P  or D | D\nD -> D and C | C\nC -> S  | not ( P )\nS -> ( P ) | OP REL  OP | true | false  \nREL ->    = | < | <= | > | >= | <>\nOP -> id | num"
+    },
+    {
+      "producciones": "E -> lit | ide\nE -> opad E\nE -> E opad E\nE -> E asig E\nE -> E int E dpt E\nE -> ap E cp"
+    },
+    {
+      "producciones": "S -> c A\nA-> a B\nB -> b | λ"
+    },
+    {
+      "producciones": "S -> A B | s\nA -> a S c | e B f | λ\nL -> b A d | λ"
+    },
+    {
+      "producciones": "S -> A B\nA -> a\nA -> λ\nB -> b C d\nC -> c\nC -> λ"
+    }
+  ]
+}
